@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "FunnySamuraiRegular.ttf";
+    src: url("../FunnySamuraiDemoOutline.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+h1 {
+  font-family: "FunnySamuraiRegular.ttf";
+  font-size: 60px;
+  margin-left: 40%;
+}
+/* Le formulaire */
+.form {
+  margin-left: 15%;
+  display: center;
+  position: relative;
+  padding: 40px;
+}
+.input-court {
+  padding-bottom: 1%;
+  margin-bottom: 1%;
+  font-size: 15px;
+  display: inline-flex;
+  font-family: "KH-Dot-Ningyouchou-16.ttf";
+}
+.input-séparation {
+  padding-left: 4%;
+}
+.input-style {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: black 1px solid;
+  width: 200px;
+  outline: none;
+}
+.label {
+  font-family: "KH-Dot-Ningyouchou-16.ttf";
+  margin-top: 1%;
+}
+.input-long {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: black 1px solid;
+  padding-bottom: 1%;
+  margin-bottom: 1%;
+  font-size: 15px;
+  display: flex;
+  font-family: "KH-Dot-Ningyouchou-16.ttf";
+  width: 420px;
+}
+.input-long:focus {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: black 1px solid;
+  outline: none;
+}
+.bouton {
+  background-color: white;
+  text-decoration: none;
+  border: 0.5px black solid;
+  width: 80%;
+  height: 30px;
+  margin-top: 2%;
+  color: white;
+  background-color: black;
+  font-family: "GameBoy.ttf";
+  font-size: 8px;
+  cursor: pointer;
+}
+#Save {
+  display: flex;
+  font-family: "KH-Dot-Ningyouchou-16.ttf";
+  font-size: 10px;
+  margin-left: 5%;
+}
+#save-h {
+  margin-top: -10px;
+}
+#div-bouton {
+  position: absolute;
+  margin-left: 38%;
+}
+/* separation */
+#separation {
+  position: absolute;
+  height: 45%;
+  background-color: black;
+  width: 1px;
+  margin-left: 45%;
+  margin-top: -23.5%;
+}
+/* liste-produit */
+#liste-produit {
+  width: 25%;
+  height: 20%;
+  display: inline-block;
+  flex-direction: column;
+  margin-top: -22%;
+  font-family: "KH-Dot-Ningyouchou-16.ttf";
+  position: fixed;
+  scrollbar-color: black;
+  scrollbar-width: inherit;
+  margin-left: 51.5%;
+  overflow-y: scroll;
+}
+.rangement-liste {
+  padding: -10px;
+  display: flex;
+}
+.titre-liste {
+  font-size: 30px;
+}
+#img {
+  width: 60px;
+  height: 60px;
+  margin-top: 5%;
+  border-radius: 20%;
+}
+.ref {
+  margin-left: 20px;
+  margin-top: 10.5%;
+}
+.pris-liste {
+  margin-left: 30px;
+  font-size: 20px;
+  margin-top: 35px;
+}
+/* total */
+#section-tt {
+  width: 25%;
+  height: 20%;
+  margin-left: 51.5%;
+  margin-top: -10%;
+  position: fixed;
+  font-family: "KH-Dot-Ningyouchou-16.ttf";
+}
+#section-tt1 {
+  width: 25%;
+  height: 20%;
+  margin-left: 51.5%;
+  margin-top: -8%;
+  position: fixed;
+  font-family: "KH-Dot-Ningyouchou-16.ttf";
+}
+#section-tt2 {
+  width: 25%;
+  height: 20%;
+  margin-left: 51.5%;
+  margin-top: -6%;
+  position: fixed;
+  font-family: "KH-Dot-Ningyouchou-16.ttf";
+}
+#total {
+  float: right;
+  display: inline;
+}
+#total1 {
+  float: left;
+}

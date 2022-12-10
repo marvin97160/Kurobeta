@@ -1,0 +1,1334 @@
+@font-face {
+    font-family: "FunnySamuraiRegular.ttf";
+    src: url("../FunnySamuraiDemoOutline.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Menu-gauche */
+#Menu {
+    /* Placement */
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 13%;
+    height: 100%;
+    /* Style */
+    border: 2px black dashed;
+    background-color: black;
+    text-decoration: none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: white;
+}
+/*Titre Kuro*/
+#Titre-M {
+    /* Placement */
+    text-align: center;
+    /* Style */
+    color: lavender;
+    font-size: 25px;
+    font-style: bold;
+    letter-spacing: 2px;
+    font-family: "FunnySamuraiRegular.ttf";
+    text-decoration: none;
+}
+/* Soutitre-chinois */
+#Sous-titre {
+    /* Placement */
+    text-align: center;
+    /* Style */
+    color: lavender;
+    font-size: 15px;
+    font-style: bold;
+    letter-spacing: -2px;
+    font-family: "FunnySamuraiRegular.ttf";
+}
+/* contenant-Lien du Menu */
+#Lien-M {
+    /* Placement */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* style */
+    color: lavender;
+}
+/* Style-lein menu */
+.Lien-menu1 {
+    /* Style */
+    font-size: 15px;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-family: "FunnySamuraiRegular.ttf";
+    /* Placement */
+    display: flex;
+    justify-content: start;
+    padding: 30px;
+    position: relative;
+    top: 100px;
+    margin-left: 14%;
+}
+/* (Style) a propo */
+#Lien-menu2 {
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 4px;
+    font-size: 16px;
+    font-family: "FunnySamuraiRegular.ttf";
+}
+
+/*  Logo  menu */
+#Img-M {
+    /* Style */
+    font-family: "FunnySamuraiRegular.ttf";
+    /* Placement */
+    height: 140px;
+    width: 150px;
+    display: flex;
+    justify-self: center;
+    position: relative;
+    top: 15%;
+    margin-left: 12%;
+}
+/* contenaure- a propo */
+#App-M {
+    /* Placement */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 25%;
+    text-decoration: underline;
+}
+
+/*  Fin du css Header (Enveloppe et text)  */
+
+#nav {
+    /* Position du la div */
+    position: fixed;
+    z-index: 31;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 920px;
+    margin-left: 29.5%;
+    background-color: rgba(255, 255, 255, 0.822);
+    /* style */
+    background-image: url(../Image/);
+    background-repeat: no-repeat;
+}
+#container-panier {
+    position: fixed;
+    width: 24.8%;
+    height: 99.9%;
+    margin-left: 75%;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    border: whitesmoke 1px solid;
+    transform: translateX(100%);
+    --webkit-transform: translateX(100%);
+    transition: transform 0.8s ease-in-out;
+    --webkit-transition: transform 0.8s ease-in-out;
+    z-index: 30;
+}
+#container-panier.isOpen {
+    transform: translateX(0%);
+    --webkit-transform: translateX(0%);
+}
+/* Style */
+/* Panier */
+#panier-titre {
+    font-family: "FunnySamuraiRegular.ttf";
+    font-size: 17px;
+    margin-top: 2%;
+    text-align: center;
+    margin-left: 15px;
+    letter-spacing: 2px;
+}
+/* liste-produit */
+#liste-produit {
+    width: 70%;
+    height: 40%;
+    display: inline-block;
+    flex-direction: column;
+    margin-top: 20%;
+    font-family: "KH-Dot-Ningyouchou-16.ttf";
+    position: fixed;
+    scrollbar-color: black;
+    scrollbar-width: initial;
+    margin-left: 20.5%;
+    overflow-y: scroll;
+}
+.rangement-liste {
+    padding: -10px;
+    display: flex;
+}
+.titre-liste {
+    font-size: 30px;
+}
+#img {
+    width: 60px;
+    height: 60px;
+    margin-top: 5%;
+    border-radius: 20%;
+}
+.ref {
+    margin-left: 20px;
+    margin-top: 10.5%;
+}
+#div-bouton {
+    position: absolute;
+    margin-left: 37%;
+    margin-top: 150.5%;
+}
+.bouton {
+    background-color: white;
+    text-decoration: none;
+    border: 0.5px black solid;
+    width: 80%;
+    height: 30px;
+    margin-top: 2%;
+    color: white;
+    background-color: black;
+    font-family: "GameBoy.ttf";
+    font-size: 8px;
+    cursor: pointer;
+}
+/* #panier-text {
+  font-family: "FunnySamuraiRegular.ttf";
+  font-size: 15px;
+  margin-top: 90%;
+  text-align: center;
+  letter-spacing: 2px;
+} */
+#nav-H {
+    /* Style de la nav */
+    color: black;
+    font-size: 50px;
+    font-family: "FunnySamuraiRegular.ttf";
+    letter-spacing: 3px;
+    text-shadow: 0px 2px 2px black;
+    /* Position de la nav */
+    text-align: center;
+    margin-left: -1%;
+    margin-top: 2.5%;
+    z-index: 29;
+}
+#nav-I {
+    /* positionnement */
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    cursor: pointer;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    margin-left: 94.8%;
+    /* Style */
+    text-shadow: 6px 6px 6px black;
+    z-index: 31;
+}
+/*  Fin de la nav css */
+/* Text nav */
+#nav-B {
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    margin-left: 95.7%;
+    margin-top: 18%;
+}
+.nav-T-B {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 20px;
+    font-family: "GameBoy.ttf";
+    letter-spacing: 3px;
+    text-shadow: 0px 2px 2px black;
+}
+#dièse {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 20px;
+    font-family: "FunnySamuraiRegular.ttf";
+    letter-spacing: 3px;
+    text-shadow: 0px 2px 2px black;
+}
+/* Fin de la nav Belier */
+#sprint-1 {
+    /* Possionnement */
+    position: fixed;
+    margin-left: 16%;
+    margin-right: 1%;
+    padding-left: 1.8%;
+    display: inline-block;
+    flex-direction: row;
+    margin-top: 14%;
+}
+.Sprint {
+    /* Style */
+    height: 35px;
+    width: 180px;
+    box-sizing: border-box;
+    text-align: justify;
+    margin-bottom: 0%;
+    margin-left: -20%;
+    /* Style */
+    background-color: rgba(255, 255, 255, 0.322);
+    color: black;
+    border: black solid 1px;
+    box-shadow: 0.4px;
+    backdrop-filter: blur(100px);
+}
+.Sprint:hover {
+    margin-left: 50px;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    margin-bottom: 20px;
+}
+.sprint-text {
+    text-align: justify;
+    bottom: 0;
+    position: absolute;
+    top: 85%;
+    letter-spacing: 2px;
+    font-family: "FunnySamuraiRegular.ttf";
+    font-size: 10px;
+    color: black;
+    margin-left: 22%;
+}
+.image-1 {
+    filter: grayscale(75%);
+    -webkit-filter: grayscale(75%);
+    height: 33px;
+    width: 178px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3 ease-in-out;
+}
+.image-1:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+/* Formulaire */
+#formulaire {
+    box-shadow: 1;
+    /* box-shadow: 0.1px 1px 9px 1px; */
+    width: 12%;
+    height: 33%;
+    font-family: "FunnySamuraiRegular.ttf";
+    font-size: 15px;
+    letter-spacing: 1px;
+    position: fixed;
+    margin-left: 83.5%;
+    margin-right: 1%;
+    padding-left: 1.8%;
+    display: block;
+    margin-top: 9.5%;
+}
+.Placement-f {
+    margin-top: 13%;
+    margin-bottom: 3%;
+    margin-left: 16%;
+}
+.style-f {
+    border: 1px solid black;
+    border-radius: 1px;
+    padding: 5px;
+    font-family: "FunnySamuraiRegular.ttf";
+    color: black;
+    outline: none;
+    border-left: rgba(24, 6, 6, 0.226) 0.1px solid;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 5%;
+    font-size: 10px;
+    margin-left: -20%;
+}
+#form-b {
+    font-family: "FunnySamuraiRegular.ttf";
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: rgba(24, 6, 6, 0.226) 0.1px solid;
+    font-size: 13px;
+    margin-left: -4%;
+    margin-top: 10%;
+    background-color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+}
+#Suggestion {
+    margin-left: -30%;
+}
+/* Disponibiliter */
+#disponible {
+    margin-top: 36%;
+    margin-left: 14.7%;
+    margin-right: 10%;
+    padding-left: 1%;
+    letter-spacing: 2px;
+    font-family: "FunnySamuraiRegular.ttf";
+    position: fixed;
+    display: inline-flex;
+}
+#Titre-reseau {
+    font-family: "FunnySamuraiRegular.ttf";
+    position: fixed;
+    margin-top: 33%;
+    margin-left: 15.9%;
+    letter-spacing: 2px;
+    font-size: 6px;
+}
+.image-reseau {
+    width: 6%;
+    height: 6%;
+    margin: 5px;
+}
+#content1 {
+    margin-top: 10%;
+    margin-left: 28%;
+    margin-right: 10%;
+    padding-left: 1%;
+}
+.box {
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    box-sizing: border-box;
+
+    text-align: justify;
+    margin-bottom: 0.5%;
+    margin-left: 0.5%;
+    color: white;
+    font-family: "FunnySamuraiRegular.ttf";
+}
+.box-image {
+    width: 100%;
+    height: 100%;
+}
+.box-text {
+    position: relative;
+    top: -400px;
+    color: black;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+/* media */
+
+@media screen and (max-width: 1750px) {
+    /* formulaire */
+    #formulaire {
+        margin-left: 80.5%;
+        width: 10%;
+        height: 30%;
+        margin-top: 11.5%;
+    }
+    /* Vetement */
+    #content1 {
+        margin-left: 37%;
+    }
+
+    /* rangement */
+    #sprint-1 {
+        /* Possionnement */
+        margin-left: 20%;
+        margin-right: 1%;
+        margin-top: 14%;
+    }
+    /*Titre Kuro*/
+    #Titre-M {
+        font-size: 22px;
+    }
+    /* Soutitre-chinois */
+    #Sous-titre {
+        /* Placement */
+        font-size: 12px;
+    }
+    /* Style-lein menu */
+    .Lien-menu1 {
+        /* Style */
+        font-size: 12px;
+    }
+    /* (Style) a propo */
+    #Lien-menu2 {
+        font-size: 12px;
+    }
+
+    /*  Logo  menu */
+    #Img-M {
+        /* Placement */
+        height: 120px;
+        width: 130px;
+        top: 15%;
+    }
+    /* contenaure- a propo */
+    #App-M {
+        top: 20%;
+        text-decoration: underline;
+    }
+    /* titre-sprint */
+    #nav {
+        /* Position du la div */
+
+        height: 100px;
+        width: 720px;
+        margin-left: 35.5%;
+        /* style */
+        background-image: url(../Image/);
+        background-repeat: no-repeat;
+    }
+    #nav-H {
+        /* Style de la nav */
+        color: black;
+        font-size: 50px;
+        font-family: "FunnySamuraiRegular.ttf";
+        letter-spacing: 3px;
+        text-shadow: 0px 2px 2px black;
+        /* Position de la nav */
+        text-align: center;
+        margin-left: -1%;
+        margin-top: 2.5%;
+        z-index: 29;
+    }
+    #nav-I {
+        /* positionnement */
+        height: 40px;
+        width: 40px;
+    }
+}
+
+/* media */
+
+@media screen and (max-width: 1500px) {
+    /* formulaire */
+    #formulaire {
+        margin-left: 84.5%;
+        width: 8%;
+        height: 25%;
+        margin-top: 14.5%;
+        font-size: 12px;
+    }
+    /* Vetement */
+    #content1 {
+        margin-top: 10%;
+        margin-left: 37%;
+        margin-right: 15%;
+        padding-left: 1%;
+    }
+
+    /* rangement */
+    #sprint-1 {
+        /* Possionnement */
+        margin-left: 21%;
+        margin-top: 17%;
+    }
+    .Sprint {
+        /* Style */
+        height: 30px;
+        width: 160px;
+    }
+    .sprint-text {
+        text-align: justify;
+        top: 85%;
+        margin-left: 40%;
+    }
+    .image-1 {
+        height: 29px;
+        width: 158px;
+    }
+    /*Titre Kuro*/
+    #Titre-M {
+        font-size: 20px;
+    }
+    /* Soutitre-chinois */
+    #Sous-titre {
+        font-size: 10px;
+    }
+    /* contenant-Lien du Menu */
+    #Lien-M {
+        /* Placement */
+        text-align: left;
+        /* style */
+        color: lavender;
+    }
+    /* Style-lein menu */
+    .Lien-menu1 {
+        /* Style */
+        font-size: 10px;
+        font-style: normal;
+        margin-left: 14%;
+    }
+    /* (Style) a propo */
+    #Lien-menu2 {
+        font-style: normal;
+        font-size: 11px;
+    }
+
+    /*  Logo  menu */
+    #Img-M {
+        height: 100px;
+        width: 110px;
+        margin-left: 16%;
+    }
+    /* contenaure- a propo */
+    #nav {
+        /* Position du la div */
+        height: 100px;
+        width: 620px;
+        margin-left: 38%;
+    }
+    /* Enveloppe */
+    #nav-H {
+        /* Style de la nav */
+        font-size: 40px;
+        /* Position de la nav */
+        margin-top: 3.5%;
+    }
+    #nav-I {
+        /* positionnement */
+        height: 40px;
+        width: 40px;
+    }
+}
+/* media */
+
+@media screen and (max-width: 1330px) {
+    /* formulaire */
+    #formulaire {
+        margin-left: 80.5%;
+        width: 8%;
+        height: 25%;
+        margin-top: 14.5%;
+        font-size: 12px;
+    }
+    /* Vetement */
+    #content1 {
+        margin-top: 10%;
+        margin-left: 33%;
+        margin-right: 15%;
+        padding-left: 1%;
+    }
+    .box {
+        width: 250px;
+        height: 350px;
+        margin-bottom: 0.5%;
+        margin-left: 0.5%;
+    }
+    .box-image {
+        width: 100%;
+        height: 100%;
+    }
+    .box-text {
+        top: -400px;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    /* rangement */
+    #sprint-1 {
+        /* Possionnement */
+        margin-left: 17%;
+        margin-top: 17%;
+    }
+    .Sprint {
+        /* Style */
+        height: 30px;
+        width: 160px;
+    }
+    .sprint-text {
+        text-align: justify;
+        top: 85%;
+        margin-left: 40%;
+    }
+    .image-1 {
+        height: 29px;
+        width: 158px;
+    }
+    /*Titre Kuro*/
+    #Titre-M {
+        font-size: 20px;
+    }
+    /* Soutitre-chinois */
+    #Sous-titre {
+        font-size: 10px;
+    }
+    /* contenant-Lien du Menu */
+    #Lien-M {
+        /* Placement */
+        text-align: left;
+        /* style */
+        color: lavender;
+    }
+    /* Style-lein menu */
+    .Lien-menu1 {
+        /* Style */
+        font-size: 10px;
+        font-style: normal;
+        margin-left: 11%;
+    }
+    /* (Style) a propo */
+    #Lien-menu2 {
+        font-style: normal;
+        font-size: 11px;
+    }
+
+    /*  Logo  menu */
+    #Img-M {
+        height: 100px;
+        width: 110px;
+        margin-left: 14%;
+    }
+    /* contenaure- a propo */
+    #nav {
+        /* Position du la div */
+        height: 100px;
+        width: 620px;
+        margin-left: 33%;
+    }
+    /* Enveloppe */
+    #nav-H {
+        /* Style de la nav */
+        font-size: 40px;
+        /* Position de la nav */
+        margin-top: 3.5%;
+    }
+    #nav-I {
+        /* positionnement */
+        height: 40px;
+        width: 40px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    #Menu {
+        /* Placement */
+        width: 18%;
+        height: 100%;
+        /* Style */
+    }
+    /* formulaire */
+    #formulaire {
+        margin-left: 24.5%;
+        width: 8%;
+        height: 25%;
+        margin-top: 34%;
+        font-size: 10px;
+    }
+    .style-f {
+        font-size: 8px;
+    }
+    #form-b {
+        font-size: 8px;
+    }
+    /*  */
+    #nav-B {
+        margin-left: 96.7%;
+        margin-top: 30%;
+    }
+    .nav-T-B {
+        color: black;
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+    #dièse {
+        color: black;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    #content1 {
+        margin-top: 10%;
+        margin-left: 44%;
+        margin-right: 8%;
+        padding-left: 1%;
+    }
+    .box {
+        width: 230px;
+        height: 330px;
+        margin-bottom: 0.5%;
+        margin-left: 0.5%;
+    }
+    .box-image {
+        width: 100%;
+        height: 100%;
+    }
+    .box-text {
+        top: -350px;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    /* rangement */
+    #sprint-1 {
+        margin-left: 24%;
+        margin-right: 1%;
+        padding-left: 1.8%;
+        margin-top: 15%;
+    }
+
+    .Sprint {
+        /* Style */
+        height: 30px;
+        width: 150px;
+        margin-bottom: 0%;
+        margin-left: -20%;
+    }
+    .sprint-text {
+        top: 85%;
+        letter-spacing: 2px;
+        font-size: 8px;
+        margin-left: 40%;
+    }
+    .image-1 {
+        height: 30px;
+        width: 148px;
+    }
+    /*Titre Kuro*/
+    #Titre-M {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    /* Soutitre-chinois */
+    #Sous-titre {
+        font-size: 8px;
+
+        letter-spacing: -2px;
+    }
+    /* Style-lein menu */
+    .Lien-menu1 {
+        /* Style */
+        font-size: 8px;
+        letter-spacing: 1.5px;
+        margin-left: 23%;
+    }
+    /* (Style) a propo */
+    #Lien-menu2 {
+        font-size: 7px;
+        margin-left: 7%;
+    }
+
+    /*  Logo  menu */
+    #Img-M {
+        /* Placement */
+        height: 70px;
+        width: 70px;
+        top: 15%;
+        margin-left: 30%;
+    }
+    /* contenaure- a propo */
+    #nav {
+        /* Position du la div */
+
+        height: 80px;
+        width: 520px;
+        margin-left: 45%;
+    }
+
+    /* Enveloppe */
+    #nav-H {
+        /* Style de la nav */
+        font-size: 30px;
+        /* Position de la nav */
+        margin-top: 5%;
+    }
+    #nav-I {
+        /* positionnement */
+        height: 40px;
+        width: 40px;
+    }
+}
+@media screen and (max-width: 1040px) {
+    #Menu {
+        /* Placement */
+        width: 18%;
+        height: 100%;
+        /* Style */
+    }
+    /* formulaire */
+    #formulaire {
+        margin-left: 24.9%;
+        width: 8%;
+        height: 25%;
+        margin-top: 45%;
+        font-size: 10px;
+    }
+    .style-f {
+        font-size: 8px;
+    }
+    #form-b {
+        font-size: 8px;
+    }
+    /*  */
+    #nav-B {
+        margin-left: 96.7%;
+        margin-top: 30%;
+    }
+    .nav-T-B {
+        color: black;
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+    #dièse {
+        color: black;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    #content1 {
+        margin-top: 10%;
+        margin-left: 45%;
+        margin-right: 8%;
+        padding-left: 1%;
+    }
+    .box {
+        width: 180px;
+        height: 280px;
+        margin-bottom: 0.5%;
+        margin-left: 0.5%;
+    }
+    .box-image {
+        width: 100%;
+        height: 100%;
+    }
+    .box-text {
+        top: -580px;
+        font-size: 8px;
+        margin-left: 10px;
+    }
+    /* rangement */
+    #sprint-1 {
+        margin-left: 25%;
+        margin-right: 1%;
+        padding-left: 1.8%;
+        margin-top: 25%;
+    }
+
+    .Sprint {
+        /* Style */
+        height: 30px;
+        width: 150px;
+        margin-bottom: 0%;
+        margin-left: -20%;
+    }
+    .sprint-text {
+        top: 85%;
+        letter-spacing: 2px;
+        font-size: 8px;
+        margin-left: 40%;
+    }
+    .image-1 {
+        height: 30px;
+        width: 148px;
+    }
+    /*Titre Kuro*/
+    #Titre-M {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    /* Soutitre-chinois */
+    #Sous-titre {
+        font-size: 8px;
+
+        letter-spacing: -2px;
+    }
+    /* Style-lein menu */
+    .Lien-menu1 {
+        /* Style */
+        font-size: 8px;
+        letter-spacing: 1.5px;
+        margin-left: 15%;
+    }
+    /* (Style) a propo */
+    #Lien-menu2 {
+        font-size: 7px;
+        margin-left: 7%;
+    }
+
+    /*  Logo  menu */
+    #Img-M {
+        /* Placement */
+        height: 70px;
+        width: 70px;
+        top: 15%;
+        margin-left: 30%;
+    }
+    /* contenaure- a propo */
+    #nav {
+        /* Position du la div */
+
+        height: 80px;
+        width: 520px;
+        margin-left: 40%;
+    }
+
+    /* Enveloppe */
+    #nav-H {
+        /* Style de la nav */
+        font-size: 30px;
+        /* Position de la nav */
+        margin-top: 5%;
+    }
+    #nav-I {
+        /* positionnement */
+        height: 40px;
+        width: 40px;
+    }
+}
+@media screen and (max-width: 870px) {
+    #Menu {
+        /* Placement */
+        width: 18%;
+        height: 100%;
+        /* Style */
+    }
+    /* formulaire */
+    #formulaire {
+        display: none;
+    }
+    .style-f {
+        font-size: 8px;
+    }
+    #form-b {
+        font-size: 8px;
+    }
+    /*  */
+    #nav-B {
+        display: none;
+    }
+    .nav-T-B {
+        color: black;
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+    #dièse {
+        color: black;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    #content1 {
+        margin-top: 10%;
+        margin-left: 30%;
+        margin-right: 0.1%;
+        padding-left: 1%;
+    }
+    .box {
+        width: 200px;
+        height: 320px;
+        margin-bottom: 0.5%;
+        margin-left: 0.5%;
+    }
+    .box-image {
+        width: 100%;
+        height: 100%;
+    }
+    .box-text {
+        top: -995px;
+        font-size: 8px;
+        margin-left: 10px;
+    }
+    /* rangement */
+    #sprint-1 {
+        display: none;
+    }
+
+    .Sprint {
+        /* Style */
+        height: 30px;
+        width: 150px;
+        margin-bottom: 0%;
+        margin-left: -20%;
+    }
+    .sprint-text {
+        top: 85%;
+        letter-spacing: 2px;
+        font-size: 8px;
+        margin-left: 40%;
+    }
+    .image-1 {
+        height: 30px;
+        width: 148px;
+    }
+    /*Titre Kuro*/
+    #Titre-M {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+    /* Soutitre-chinois */
+    #Sous-titre {
+        font-size: 8px;
+        letter-spacing: -2px;
+    }
+    /* Style-lein menu */
+    .Lien-menu1 {
+        /* Style */
+        font-size: 8px;
+        letter-spacing: 1px;
+        margin-left: 3%;
+    }
+    /* (Style) a propo */
+    #Lien-menu2 {
+        font-size: 7px;
+        margin-left: 7%;
+    }
+
+    /*  Logo  menu */
+    #Img-M {
+        /* Placement */
+        height: 70px;
+        width: 70px;
+        top: 15%;
+        margin-left: 20%;
+    }
+    /* contenaure- a propo */
+    #nav {
+        /* Position du la div */
+
+        height: 80px;
+        width: 520px;
+        margin-left: 25%;
+    }
+
+    /* Enveloppe */
+    #nav-H {
+        /* Style de la nav */
+        font-size: 30px;
+        /* Position de la nav */
+        margin-top: 5%;
+    }
+    #nav-I {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #Menu {
+        /* Placement */
+        width: 30%;
+        height: 100%;
+        /* Style */
+    }
+    /* formulaire */
+    #formulaire {
+        display: none;
+    }
+    .style-f {
+        font-size: 8px;
+    }
+    #form-b {
+        font-size: 8px;
+    }
+    /*  */
+    #nav-B {
+        display: none;
+    }
+    .nav-T-B {
+        color: black;
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+    #dièse {
+        color: black;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    #content1 {
+        margin-top: 10%;
+        margin-left: 33%;
+        margin-right: 0.1%;
+        padding-left: 1%;
+    }
+    .box {
+        width: 45%;
+        height: 200px;
+        margin-bottom: 0.5%;
+        margin-left: 0.5%;
+    }
+    .box-image {
+        width: 100%;
+        height: 100%;
+    }
+    .box-text {
+        top: -9%;
+        font-size: 8px;
+        margin-left: 10px;
+    }
+    /* rangement */
+    #sprint-1 {
+        display: none;
+    }
+
+    .Sprint {
+        /* Style */
+        height: 30px;
+        width: 150px;
+        margin-bottom: 0%;
+        margin-left: -20%;
+    }
+    .sprint-text {
+        top: 85%;
+        letter-spacing: 2px;
+        font-size: 8px;
+        margin-left: 40%;
+    }
+    .image-1 {
+        height: 30px;
+        width: 148px;
+    }
+    /*Titre Kuro*/
+    #Titre-M {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+    /* Soutitre-chinois */
+    #Sous-titre {
+        font-size: 8px;
+        letter-spacing: -2px;
+    }
+    /* Style-lein menu */
+    .Lien-menu1 {
+        /* Style */
+        font-size: 8px;
+        letter-spacing: 1px;
+        margin-left: 15%;
+    }
+    /* (Style) a propo */
+    #Lien-menu2 {
+        font-size: 7px;
+        margin-left: 20%;
+    }
+
+    /*  Logo  menu */
+    #Img-M {
+        /* Placement */
+        height: 70px;
+        width: 70px;
+        top: 15%;
+        margin-left: 20%;
+    }
+    /* contenaure- a propo */
+    #nav {
+        /* Position du la div */
+
+        height: 50px;
+        width: 320px;
+        margin-left: 35%;
+    }
+
+    /* Enveloppe */
+    #nav-H {
+        /* Style de la nav */
+        font-size: 20px;
+        /* Position de la nav */
+        margin-top: 5%;
+    }
+    #nav-I {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    #Menu {
+        /* Placement */
+        width: 30%;
+        height: 100%;
+        /* Style */
+    }
+    /* formulaire */
+    #formulaire {
+        display: none;
+    }
+    /*  */
+    #nav-B {
+        display: none;
+    }
+    #content1 {
+        margin-top: 10%;
+        margin-left: 33%;
+        margin-right: 0.1%;
+        padding-left: 1%;
+    }
+    .box {
+        width: 45%;
+        height: 200px;
+        margin-bottom: 0.5%;
+        margin-left: 0.5%;
+    }
+    .box-image {
+        width: 100%;
+        height: 100%;
+    }
+    .box-text {
+        top: -6%;
+        font-size: 4px;
+        margin-left: 10px;
+        letter-spacing: 0px;
+    }
+    /* rangement */
+    #sprint-1 {
+        display: none;
+    }
+    /*Titre Kuro*/
+    #Titre-M {
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-bottom: 1%;
+    }
+    /* Soutitre-chinois */
+    #Sous-titre {
+        font-size: 5px;
+        letter-spacing: -2px;
+    }
+    /* Style-lein menu */
+    .Lien-menu1 {
+        /* Style */
+        margin-top: -20%;
+        font-size: 6px;
+        letter-spacing: x;
+        margin-left: 1%;
+    }
+    /* (Style) a propo */
+    #Lien-menu2 {
+        font-size: 7px;
+        margin-left: 10%;
+    }
+
+    /*  Logo  menu */
+    #Img-M {
+        /* Placement */
+        height: 70px;
+        width: 70px;
+        top: 15%;
+        margin-left: 14%;
+    }
+    /* contenaure- a propo */
+    #nav {
+        /* Position du la div */
+
+        height: 50px;
+        width: 220px;
+        margin-left: 34%;
+    }
+
+    /* Enveloppe */
+    #nav-H {
+        /* Style de la nav */
+        font-size: 20px;
+        /* Position de la nav */
+        margin-top: 5%;
+    }
+    #nav-I {
+        display: none;
+    }
+}
